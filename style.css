@@ -1,0 +1,65 @@
+
+*{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    word-spacing: 2px;
+}
+canvas{
+ background-color: lightblue;   
+margin-top: 160px;
+border-radius: 20px;
+
+animation-name: rainbow;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+
+
+
+}
+
+
+#show_sketch{
+    margin: 5px;
+    
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 2px;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 2px;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 2px;
+    }
+}
+@keyframes rainbow {
+    0%{
+    border: 5px solid red;
+    }
+    50%{
+    border: 5px solid yellow;
+    }
+    100%{
+    border: 5px solid orange;
+    }
+}
+@keyframes d {
+    0%{
+        box-shadow: 5px solid red;
+        }
+        50%{
+        box-shadow: 5px solid yellow;
+        }
+        100%{
+        box-shadow: 5px solid orange;
+        }
+}
